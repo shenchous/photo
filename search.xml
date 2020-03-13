@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>利用hexo和gitee快速创建免费博客</title>
-    <url>/kongwu/2020/02/20/20200220/</url>
+    <url>/kongwu//20200220.html</url>
     <content><![CDATA[<h2 id="一、-创建账号和搭建环境"><a href="#一、-创建账号和搭建环境" class="headerlink" title="一、 创建账号和搭建环境"></a>一、 创建账号和搭建环境</h2><p>首先先去<a href="https://gitee.com/" target="_blank" rel="noopener">gitee</a>创建一个账号<br>下载安装<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">Node.js</a><br>下载安装<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>（国内下载比较慢）<a id="more"></a></p>
 <hr>
 <h3 id="二、搭建"><a href="#二、搭建" class="headerlink" title="二、搭建"></a>二、搭建</h3><p>登陆gitee新建仓库<br><img src="/kongwu/images/202002201.jpg" alt="图片"><br><img src="/kongwu/images/202002202.png" alt="图片"><br>开启Gitee Pages服务以后就作为你的博客地址<br><img src="/kongwu/images/202002203.png" alt="图片"><br>点击开始，然后记住这个地址（这个就是你的博客地址）<br><img src="/kongwu/images/202002204.png" alt="图片"></p>
