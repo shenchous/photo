@@ -14,10 +14,13 @@
 
 
 <link rel="stylesheet" href="/kongwu/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/kongwu/lib/pace/pace-theme-minimal.min.css">
+  <script src="/kongwu/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"kongwu233.gitee.io","root":"/kongwu/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"kongwu233.gitee.io","root":"/kongwu/","scheme":"Muse","version":"7.7.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -116,7 +119,8 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">空空的，什么都没有</p>
+        <h1 class="site-subtitle" itemprop="description">空空的，什么都没有</h1>
+      
   </div>
 
   <div class="site-nav-right">
@@ -217,16 +221,16 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/kongwu/images/avatar.gif">
       <meta itemprop="name" content="空无">
-      <meta itemprop="description" content="一个连搜索引擎都没有收录博客,">
+      <meta itemprop="description" content="一个连搜索引擎都没有收录博客">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="空无的博客">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           利用hexo和gitee快速创建免费博客
-        </h1>
+        </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -286,17 +290,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="一、-创建账号和搭建环境"><a href="#一、-创建账号和搭建环境" class="headerlink" title="一、 创建账号和搭建环境"></a>一、 创建账号和搭建环境</h2><p>首先先去<a href="https://gitee.com/" target="_blank" rel="noopener">gitee</a>创建一个账号<br>下载安装<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">Node.js</a><br>下载安装<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>（国内下载比较慢）<a id="more"></a></p>
+        <h2 id="一、-创建账号和搭建环境"><a href="#一、-创建账号和搭建环境" class="headerlink" title="一、 创建账号和搭建环境"></a>一、 创建账号和搭建环境</h2><p>首先先去<span class="exturl" data-url="aHR0cHM6Ly9naXRlZS5jb20v" title="https://gitee.com/">gitee<i class="fa fa-external-link"></i></span>创建一个账号<br>下载安装<span class="exturl" data-url="aHR0cDovL25vZGVqcy5jbi9kb3dubG9hZC8=" title="http://nodejs.cn/download/">Node.js<i class="fa fa-external-link"></i></span><br>下载安装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=" title="https://git-scm.com/">Git<i class="fa fa-external-link"></i></span>（国内下载比较慢）<a id="more"></a></p>
 <hr>
-<h3 id="二、搭建"><a href="#二、搭建" class="headerlink" title="二、搭建"></a>二、搭建</h3><p>登陆gitee新建仓库<br><img src="/kongwu/images/202002201.jpg" alt="图片"><br><img src="/kongwu/images/202002202.png" alt="图片"><br>开启Gitee Pages服务以后就作为你的博客地址<br><img src="/kongwu/images/202002203.png" alt="图片"><br>点击开始，然后记住这个地址（这个就是你的博客地址）<br><img src="/kongwu/images/202002204.png" alt="图片"></p>
+<h3 id="二、搭建"><a href="#二、搭建" class="headerlink" title="二、搭建"></a>二、搭建</h3><p>登陆gitee新建仓库<br><img data-src="/kongwu/images/202002201.jpg" alt="图片"><br><img data-src="/kongwu/images/202002202.png" alt="图片"><br>开启Gitee Pages服务以后就作为你的博客地址<br><img data-src="/kongwu/images/202002203.png" alt="图片"><br>点击开始，然后记住这个地址（这个就是你的博客地址）<br><img data-src="/kongwu/images/202002204.png" alt="图片"></p>
 <hr>
-<p>创建一个文件夹，然后右键打开Git Bash Here<br><img src="/kongwu/images/202002205.png" alt="图片"></p>
+<p>创建一个文件夹，然后右键打开Git Bash Here<br><img data-src="/kongwu/images/202002205.png" alt="图片"></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
 <p>稍等几分钟就可以了（国内访问比较慢）<br>实在太慢了可以换成淘宝镜像</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 <p>确认是否安装好了</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo v</span><br></pre></td></tr></table></figure>
-<p><img src="/kongwu/images/202002206.png" alt="图片"></p>
+<p><img data-src="/kongwu/images/202002206.png" alt="图片"></p>
 <hr>
 <p>初始化Hexo</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
@@ -307,19 +311,19 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p>启动本地服务，Ctrl+c停止</p>
 <hr>
-<p>浏览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 预览<br><img src="/kongwu/images/2020022010.png" alt="图片"></p>
+<p>浏览器输入<span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAw" title="http://localhost:4000">http://localhost:4000<i class="fa fa-external-link"></i></span> 预览<br><img data-src="/kongwu/images/2020022010.png" alt="图片"></p>
 <hr>
 <h3 id="三、部署到Gitee上"><a href="#三、部署到Gitee上" class="headerlink" title="三、部署到Gitee上"></a>三、部署到Gitee上</h3><p>输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"你的Gitee用户名"</span> </span><br><span class="line">git config --global user.email <span class="string">"你Gitee使用的邮箱"</span></span><br></pre></td></tr></table></figure>
-<p>在根目录打开_config.yml配置Git<br><img src="/kongwu/images/202002207.png" alt="图片"><br>修改</p>
+<p>在根目录打开_config.yml配置Git<br><img data-src="/kongwu/images/202002207.png" alt="图片"><br>修改</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: 你的地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>repo在这里获取<br><img src="/kongwu/images/202002208.png" alt="图片"></p>
+<p>repo在这里获取<br><img data-src="/kongwu/images/202002208.png" alt="图片"></p>
 <hr>
 <h4 id="四、上传到Gitee"><a href="#四、上传到Gitee" class="headerlink" title="四、上传到Gitee"></a>四、上传到Gitee</h4><p> 安装自动部署发布工具</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 <p>首次需要在shell中输入账号和密码。</p>
 <hr>
-<p>刷新一下就可以看到上传的文件了<br><img src="/kongwu/images/2020022011.png" alt="图片"><br><font color="#660000"><u>记得更新Gitee Pages服务！！！</u></font><br><br><img src="/kongwu/images/2020022012.png" alt="图片"><br>这样就可以打开之前Gitee Pages服务里的链接了<br>至此，博客就搭建完成啦！！！<br>在/Hexo/source/_posts目录下就可以写我们的博客啦！！！</p>
+<p>刷新一下就可以看到上传的文件了<br><img data-src="/kongwu/images/2020022011.png" alt="图片"><br><font color="#660000"><u>记得更新Gitee Pages服务！！！</u></font><br><br><img data-src="/kongwu/images/2020022012.png" alt="图片"><br>这样就可以打开之前Gitee Pages服务里的链接了<br>至此，博客就搭建完成啦！！！<br>在/Hexo/source/_posts目录下就可以写我们的博客啦！！！</p>
 <p align="right">70%转载，30%自制</p>
     </div>
 
@@ -338,16 +342,17 @@
     <a href="https://kongwu233.gitee.io/kongwu/20200220.html" title="利用hexo和gitee快速创建免费博客">https://kongwu233.gitee.io/kongwu/20200220.html</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
 
 
       <footer class="post-footer">
+          
           <div class="post-tags">
-              <a href="/kongwu/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
-              <a href="/kongwu/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+              <a href="/kongwu/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="fa fa-tag"></i> 博客</a>
+              <a href="/kongwu/tags/%E6%95%99%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 教程</a>
           </div>
 
         
@@ -425,7 +430,7 @@
     <img class="site-author-image" itemprop="image" alt="空无"
       src="/kongwu/images/avatar.gif">
   <p class="site-author-name" itemprop="name">空无</p>
-  <div class="site-description" itemprop="description">一个连搜索引擎都没有收录博客,</div>
+  <div class="site-description" itemprop="description">一个连搜索引擎都没有收录博客</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -452,14 +457,14 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://shenchous.github.io/kongwu" title="GitHub → https:&#x2F;&#x2F;shenchous.github.io&#x2F;kongwu" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9zaGVuY2hvdXMuZ2l0aHViLmlvL2tvbmd3dQ==" title="GitHub → https:&#x2F;&#x2F;shenchous.github.io&#x2F;kongwu"><i class="fa fa-fw fa-github"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1047717011@qq.com" title="E-Mail → mailto:1047717011@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <span class="exturl" data-url="bWFpbHRvOjEwNDc3MTcwMTFAcXEuY29t" title="E-Mail → mailto:1047717011@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</span>
       </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/kongwu/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="/kongwu/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
   </div>
 
 
@@ -470,10 +475,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <a href="https://shenchous.github.io/kongwu" title="https:&#x2F;&#x2F;shenchous.github.io&#x2F;kongwu" rel="noopener" target="_blank">GitHub</a>
+          <span class="exturl" data-url="aHR0cHM6Ly9zaGVuY2hvdXMuZ2l0aHViLmlvL2tvbmd3dQ==" title="https:&#x2F;&#x2F;shenchous.github.io&#x2F;kongwu">GitHub</span>
         </li>
         <li class="links-of-blogroll-item">
-          <a href="https://space.bilibili.com/85595353" title="https:&#x2F;&#x2F;space.bilibili.com&#x2F;85595353" rel="noopener" target="_blank">bilibili</a>
+          <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vODU1OTUzNTM=" title="https:&#x2F;&#x2F;space.bilibili.com&#x2F;85595353">bilibili</span>
         </li>
         <li class="links-of-blogroll-item">
           <a href="https://kongwu233.gitee.io/kongwu/about" title="https:&#x2F;&#x2F;kongwu233.gitee.io&#x2F;kongwu&#x2F;about">关于</a>
@@ -518,10 +523,10 @@
 </div>
 
 <!--
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> 强力驱动 v4.2.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.2
+  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly9tdXNlLnRoZW1lLW5leHQub3Jn">NexT.Muse</span> v7.7.2
   </div>
 -->
         
@@ -560,6 +565,9 @@
   
   <script size="300" alpha="0.6" zIndex="-1" src="/kongwu/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/kongwu/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="/kongwu/lib/velocity/velocity.min.js"></script>
   <script src="/kongwu/lib/velocity/velocity.ui.min.js"></script>
 
@@ -581,6 +589,15 @@
 
 
   
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 
@@ -603,6 +620,16 @@
   
 
   
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://kongwu233.gitee.io/kongwu/20200220.html',]
+      });
+      });
+  </script>
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
