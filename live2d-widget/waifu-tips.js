@@ -5,7 +5,7 @@
 
 function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config;
-	let useCDN = true, modelList;
+	let useCDN = false, modelList;
 	if (typeof cdnPath === "string") {
 		useCDN = true;
 		if (!cdnPath.endsWith("/")) cdnPath += "/";
