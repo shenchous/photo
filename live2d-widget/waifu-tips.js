@@ -5,7 +5,7 @@
 
 function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config;
-	let useCDN = false, modelList;
+	let useCDN = true, modelList;
 	if (typeof cdnPath === "string") {
 		useCDN = true;
 		if (!cdnPath.endsWith("/")) cdnPath += "/";
@@ -35,7 +35,7 @@ function loadWidget(config) {
 		return Array.isArray(obj) ? obj[Math.floor(Math.random() * obj.length)] : obj;
 	}
 	// 检测用户活动状态，并在空闲时显示消息
-	let userAction = false,
+	let userAction = ture,
 		userActionTimer,
 		messageTimer,
 		messageArray = ["好久不见，日子过得好快呢……", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！", "记得把小家加入 Adblock 白名单哦！"];
@@ -43,7 +43,7 @@ function loadWidget(config) {
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
 		if (userAction) {
-			userAction = false;
+			userAction = true;
 			clearInterval(userActionTimer);
 			userActionTimer = null;
 		} else if (!userActionTimer) {
