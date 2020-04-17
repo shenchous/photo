@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>复活PanDownload</title>
+    <url>/kongwu/2/</url>
+    <content><![CDATA[<script src="https://kongwu233.gitee.io/kongwu/live2d-widget/autoload.js"></script>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于<del>屑百度</del>搞事，把<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFpZHUuY29tL3M/aWU9dXRmLTgmZj04JnJzdl9icD0xJnJzdl9pZHg9MSZ0bj1iYWlkdSZ3ZD1QYW5Eb3dubG9hZA==" title="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=PanDownload">PanDownload的作者给抓了<i class="fa fa-external-link"></i></span>，导致现在的PanDownload基本上是残废的，但最近看到GitHub上面有人发布了本地虚拟服务器<br>现在的PanDownload速度也不能起飞了，该慢的还是慢，而且还容易黑号<br>作者被抓了，之后百度更新了获取方法，那PanDownload就真的作废了<br><strong><em>网上的那些其他服务器最好别用，鬼知道是不是<del>屑百度在钓鱼</del>，而且用了其他的服务器也不知道有没有安全问题，能不用最好还是别用</em></strong><a id="more"></a></p>
+<hr>
+<h1 id="开搞"><a href="#开搞" class="headerlink" title="开搞"></a>开搞</h1><h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h2><p>去<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0VYQUNHL3BhbmRvd25sb2FkLWZha2UtbG9jYWxzZXJ2ZXI=" title="https://github.com/EXACG/pandownload-fake-localserver">GitHub<i class="fa fa-external-link"></i></span>上下载<br>下载完解压之后运行<strong>Pandownload服务离线工具.exe</strong>，运行之后就可以挂在后台不管它了</p>
+<hr>
+<h3 id="2-修改文件"><a href="#2-修改文件" class="headerlink" title="2.修改文件"></a>2.修改文件</h3><p>因为这是本地本地虚拟服务器，所以需要修改<strong>C:\Windows\System32\drivers\etc</strong>里的<strong>hosts</strong><br>用记事本或者其他软件打开<strong>hosts</strong>（注意权限，用记事本修改的可以先复制到桌面修改完后再覆盖）<br>添加：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">127.0.0.1 pandownload.com</span><br></pre></td></tr></table></figure>
+<p>打开<strong>PanDownload.exe</strong>，登陆即可正常使用</p>
+<hr>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>如果不能登陆，使用<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFpZHUuY29tL3M/aWU9dXRmLTgmZj04JnJzdl9icD0xJnRuPWJhaWR1JndkPSVFOCU4RSVCNyVFNSU4RiU5NiVFNyU5OSVCRSVFNSVCQSVBNkNvb2tpZQ==" title="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=%E8%8E%B7%E5%8F%96%E7%99%BE%E5%BA%A6Cookie">Cookie<i class="fa fa-external-link"></i></span>登陆</p>
+<hr>
+<h1 id="吐槽"><a href="#吐槽" class="headerlink" title="吐槽"></a>吐槽</h1><p><del>屑百度网盘，不冲超级会员就8kb/s，冲了超级会员还限速，就很离谱了</del><br><del>现在直接抓人了还行，f**k百度</del><br><del>今天上午在b站上看到的PanDownload教程视频，下午就没了？？？</del></p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>PanDownload</tag>
+        <tag>百度网盘</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>利用hexo和gitee快速搭建免费博客</title>
     <url>/kongwu/1/</url>
-    <content><![CDATA[<h2 id="一、-创建账号和搭建环境"><a href="#一、-创建账号和搭建环境" class="headerlink" title="一、 创建账号和搭建环境"></a>一、 创建账号和搭建环境</h2><p>首先先去<span class="exturl" data-url="aHR0cHM6Ly9naXRlZS5jb20v" title="https://gitee.com/">gitee<i class="fa fa-external-link"></i></span>创建一个账号<br>下载安装<span class="exturl" data-url="aHR0cDovL25vZGVqcy5jbi9kb3dubG9hZC8=" title="http://nodejs.cn/download/">Node.js<i class="fa fa-external-link"></i></span><br>下载安装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=" title="https://git-scm.com/">Git<i class="fa fa-external-link"></i></span>（国内下载比较慢）<a id="more"></a></p>
+    <content><![CDATA[<h1 id="一、-创建账号和搭建环境"><a href="#一、-创建账号和搭建环境" class="headerlink" title="一、 创建账号和搭建环境"></a>一、 创建账号和搭建环境</h1><p>首先先去<span class="exturl" data-url="aHR0cHM6Ly9naXRlZS5jb20v" title="https://gitee.com/">gitee<i class="fa fa-external-link"></i></span>创建一个账号<br>下载安装<span class="exturl" data-url="aHR0cDovL25vZGVqcy5jbi9kb3dubG9hZC8=" title="http://nodejs.cn/download/">Node.js<i class="fa fa-external-link"></i></span><br>下载安装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=" title="https://git-scm.com/">Git<i class="fa fa-external-link"></i></span>（国内下载比较慢）<a id="more"></a></p>
 <hr>
-<h3 id="二、搭建"><a href="#二、搭建" class="headerlink" title="二、搭建"></a>二、搭建</h3><p>登陆gitee新建仓库<br><img data-src="/kongwu/images/202002201.jpg" alt="图片"><br><img data-src="/kongwu/images/202002202.png" alt="图片"><br>开启Gitee Pages服务以后就作为你的博客地址<br><img data-src="/kongwu/images/202002203.png" alt="图片"><br>点击开始，然后记住这个地址（这个就是你的博客地址）<br><img data-src="/kongwu/images/202002204.png" alt="图片"></p>
+<h1 id="二、搭建"><a href="#二、搭建" class="headerlink" title="二、搭建"></a>二、搭建</h1><p>登陆gitee新建仓库<br><img data-src="/kongwu/images/202002201.jpg" alt="图片"><br><img data-src="/kongwu/images/202002202.png" alt="图片"><br>开启Gitee Pages服务以后就作为你的博客地址<br><img data-src="/kongwu/images/202002203.png" alt="图片"><br>点击开始，然后记住这个地址（这个就是你的博客地址）<br><img data-src="/kongwu/images/202002204.png" alt="图片"></p>
 <hr>
 <p>创建一个文件夹，然后右键打开Git Bash Here<br><img data-src="/kongwu/images/202002205.png" alt="图片"></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
@@ -26,13 +52,13 @@
 <hr>
 <p>浏览器输入<span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAw" title="http://localhost:4000">http://localhost:4000<i class="fa fa-external-link"></i></span> 预览<br><img data-src="/kongwu/images/2020022010.png" alt="图片"></p>
 <hr>
-<h3 id="三、部署到Gitee上"><a href="#三、部署到Gitee上" class="headerlink" title="三、部署到Gitee上"></a>三、部署到Gitee上</h3><p>输入</p>
+<h1 id="三、部署到Gitee上"><a href="#三、部署到Gitee上" class="headerlink" title="三、部署到Gitee上"></a>三、部署到Gitee上</h1><p>输入</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">"你的Gitee用户名"</span> </span><br><span class="line">git config --global user.email <span class="string">"你Gitee使用的邮箱"</span></span><br></pre></td></tr></table></figure>
 <p>在根目录打开_config.yml配置Git<br><img data-src="/kongwu/images/202002207.png" alt="图片"><br>修改</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: 你的地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>repo在这里获取<br><img data-src="/kongwu/images/202002208.png" alt="图片"></p>
 <hr>
-<h4 id="四、上传到Gitee"><a href="#四、上传到Gitee" class="headerlink" title="四、上传到Gitee"></a>四、上传到Gitee</h4><p> 安装自动部署发布工具</p>
+<h1 id="四、上传到Gitee"><a href="#四、上传到Gitee" class="headerlink" title="四、上传到Gitee"></a>四、上传到Gitee</h1><p> 安装自动部署发布工具</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 <p>首次需要在shell中输入账号和密码。</p>
 <hr>
