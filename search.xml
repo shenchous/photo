@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>利用hexo和gitee快速搭建免费博客</title>
+    <url>/kongwu/1/</url>
+    <content><![CDATA[<h1 id="一、-创建账号和搭建环境"><a href="#一、-创建账号和搭建环境" class="headerlink" title="一、 创建账号和搭建环境"></a>一、 创建账号和搭建环境</h1><p>首先先去<span class="exturl" data-url="aHR0cHM6Ly9naXRlZS5jb20v" title="https://gitee.com/">gitee<i class="fa fa-external-link"></i></span>创建一个账号<br>下载安装<span class="exturl" data-url="aHR0cDovL25vZGVqcy5jbi9kb3dubG9hZC8=" title="http://nodejs.cn/download/">Node.js<i class="fa fa-external-link"></i></span><br>下载安装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=" title="https://git-scm.com/">Git<i class="fa fa-external-link"></i></span>（国内下载比较慢）<a id="more"></a></p>
+<hr>
+<h1 id="二、搭建"><a href="#二、搭建" class="headerlink" title="二、搭建"></a>二、搭建</h1><p>登陆gitee新建仓库<br><img data-src="/kongwu/images/202002201.webp" alt="图片"><br><img data-src="/kongwu/images/202002202.webp" alt="图片"><br>开启Gitee Pages服务以后就作为你的博客地址<br><img data-src="/kongwu/images/202002203.webp" alt="图片"><br>点击开始，然后记住这个地址（这个就是你的博客地址）<br><img data-src="/kongwu/images/202002204.webp" alt="图片"></p>
+<hr>
+<p>创建一个文件夹，然后右键打开Git Bash Here<br><img data-src="/kongwu/images/202002205.webp" alt="图片"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+<p>稍等几分钟就可以了（国内访问比较慢）<br>实在太慢了可以换成淘宝镜像</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>确认是否安装好了</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo v</span><br></pre></td></tr></table></figure>
+<p><img data-src="/kongwu/images/202002206.webp" alt="图片"></p>
+<hr>
+<p>初始化Hexo</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>初始化完成之后就可以看到文件夹里多出了一些文件</p>
+<hr>
+<p>检查是否完成</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>启动本地服务，Ctrl+c停止</p>
+<hr>
+<p>浏览器输入<span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAw" title="http://localhost:4000">http://localhost:4000<i class="fa fa-external-link"></i></span> 预览<br><img data-src="/kongwu/images/2020022010.webp" alt="图片"></p>
+<hr>
+<h1 id="三、部署到Gitee上"><a href="#三、部署到Gitee上" class="headerlink" title="三、部署到Gitee上"></a>三、部署到Gitee上</h1><p>输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">"你的Gitee用户名"</span> </span><br><span class="line">git config --global user.email <span class="string">"你Gitee使用的邮箱"</span></span><br></pre></td></tr></table></figure>
+<p>在根目录打开_config.yml配置Git<br><img data-src="/kongwu/images/202002207.webp" alt="图片"><br>修改</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: 你的地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>repo在这里获取<br><img data-src="/kongwu/images/202002208.webp" alt="图片"></p>
+<hr>
+<h1 id="四、上传到Gitee"><a href="#四、上传到Gitee" class="headerlink" title="四、上传到Gitee"></a>四、上传到Gitee</h1><p> 安装自动部署发布工具</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+<p>首次需要在shell中输入账号和密码。</p>
+<hr>
+<p>刷新一下就可以看到上传的文件了<br><img data-src="/kongwu/images/2020022011.webp" alt="图片"><br><font color="#660000"><u>记得更新Gitee Pages服务！！！</u></font><br><br><img data-src="/kongwu/images/2020022012.webp" alt="图片"><br>这样就可以打开之前Gitee Pages服务里的链接了<br>至此，博客就搭建完成啦！！！<br>在/Hexo/source/_posts目录下就可以写我们的博客啦！！！</p>
+<p align="right">我在<span class="exturl" data-url="aHR0cHM6Ly93d3cuY29vbGFway5jb20vZmVlZC8xNjY0NzkyOD9zaGFyZUtleT1ZVE0xWlRReE9EYzBZMkl4TldVM01EZ3lOR1F+JnNoYXJlVWlkPTEzMTI2Njgmc2hhcmVGcm9tPWNvbS5jb29sYXBrLm1hcmtldF8xMC4wLjM=" title="https://www.coolapk.com/feed/16647928?shareKey=YTM1ZTQxODc0Y2IxNWU3MDgyNGQ~&shareUid=1312668&shareFrom=com.coolapk.market_10.0.3">酷安<i class="fa fa-external-link"></i></span>也发布了</p>
+<p align="right"><span class="exturl" data-url="aHR0cHM6Ly93d3cuY29vbGFway5jb20vZmVlZC85NTc3Nzc0P3NoYXJlS2V5PU16UTJaamRpWVRZMlpXTTROV1UzTURneFl6VX4mc2hhcmVVaWQ9MTMxMjY2OCZzaGFyZUZyb209Y29tLmNvb2xhcGsubWFya2V0XzEwLjAuMw==" title="https://www.coolapk.com/feed/9577774?shareKey=MzQ2ZjdiYTY2ZWM4NWU3MDgxYzU~&shareUid=1312668&shareFrom=com.coolapk.market_10.0.3">部分参考<i class="fa fa-external-link"></i></span></p>]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>复活PanDownload</title>
     <url>/kongwu/2/</url>
     <content><![CDATA[<script src="https://kongwu233.gitee.io/kongwu/live2d-widget/autoload.js"></script>
@@ -26,53 +73,6 @@
         <tag>教程</tag>
         <tag>PanDownload</tag>
         <tag>百度网盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用hexo和gitee快速搭建免费博客</title>
-    <url>/kongwu/1/</url>
-    <content><![CDATA[<h1 id="一、-创建账号和搭建环境"><a href="#一、-创建账号和搭建环境" class="headerlink" title="一、 创建账号和搭建环境"></a>一、 创建账号和搭建环境</h1><p>首先先去<span class="exturl" data-url="aHR0cHM6Ly9naXRlZS5jb20v" title="https://gitee.com/">gitee<i class="fa fa-external-link"></i></span>创建一个账号<br>下载安装<span class="exturl" data-url="aHR0cDovL25vZGVqcy5jbi9kb3dubG9hZC8=" title="http://nodejs.cn/download/">Node.js<i class="fa fa-external-link"></i></span><br>下载安装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=" title="https://git-scm.com/">Git<i class="fa fa-external-link"></i></span>（国内下载比较慢）<a id="more"></a></p>
-<hr>
-<h1 id="二、搭建"><a href="#二、搭建" class="headerlink" title="二、搭建"></a>二、搭建</h1><p>登陆gitee新建仓库<br><img data-src="/kongwu/images/202002201.jpg" alt="图片"><br><img data-src="/kongwu/images/202002202.png" alt="图片"><br>开启Gitee Pages服务以后就作为你的博客地址<br><img data-src="/kongwu/images/202002203.png" alt="图片"><br>点击开始，然后记住这个地址（这个就是你的博客地址）<br><img data-src="/kongwu/images/202002204.png" alt="图片"></p>
-<hr>
-<p>创建一个文件夹，然后右键打开Git Bash Here<br><img data-src="/kongwu/images/202002205.png" alt="图片"></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
-<p>稍等几分钟就可以了（国内访问比较慢）<br>实在太慢了可以换成淘宝镜像</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>确认是否安装好了</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo v</span><br></pre></td></tr></table></figure>
-<p><img data-src="/kongwu/images/202002206.png" alt="图片"></p>
-<hr>
-<p>初始化Hexo</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p>初始化完成之后就可以看到文件夹里多出了一些文件</p>
-<hr>
-<p>检查是否完成</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>启动本地服务，Ctrl+c停止</p>
-<hr>
-<p>浏览器输入<span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAw" title="http://localhost:4000">http://localhost:4000<i class="fa fa-external-link"></i></span> 预览<br><img data-src="/kongwu/images/2020022010.png" alt="图片"></p>
-<hr>
-<h1 id="三、部署到Gitee上"><a href="#三、部署到Gitee上" class="headerlink" title="三、部署到Gitee上"></a>三、部署到Gitee上</h1><p>输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">"你的Gitee用户名"</span> </span><br><span class="line">git config --global user.email <span class="string">"你Gitee使用的邮箱"</span></span><br></pre></td></tr></table></figure>
-<p>在根目录打开_config.yml配置Git<br><img data-src="/kongwu/images/202002207.png" alt="图片"><br>修改</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: 你的地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>repo在这里获取<br><img data-src="/kongwu/images/202002208.png" alt="图片"></p>
-<hr>
-<h1 id="四、上传到Gitee"><a href="#四、上传到Gitee" class="headerlink" title="四、上传到Gitee"></a>四、上传到Gitee</h1><p> 安装自动部署发布工具</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-<p>首次需要在shell中输入账号和密码。</p>
-<hr>
-<p>刷新一下就可以看到上传的文件了<br><img data-src="/kongwu/images/2020022011.png" alt="图片"><br><font color="#660000"><u>记得更新Gitee Pages服务！！！</u></font><br><br><img data-src="/kongwu/images/2020022012.png" alt="图片"><br>这样就可以打开之前Gitee Pages服务里的链接了<br>至此，博客就搭建完成啦！！！<br>在/Hexo/source/_posts目录下就可以写我们的博客啦！！！</p>
-<p align="right">我在<span class="exturl" data-url="aHR0cHM6Ly93d3cuY29vbGFway5jb20vZmVlZC8xNjY0NzkyOD9zaGFyZUtleT1ZVE0xWlRReE9EYzBZMkl4TldVM01EZ3lOR1F+JnNoYXJlVWlkPTEzMTI2Njgmc2hhcmVGcm9tPWNvbS5jb29sYXBrLm1hcmtldF8xMC4wLjM=" title="https://www.coolapk.com/feed/16647928?shareKey=YTM1ZTQxODc0Y2IxNWU3MDgyNGQ~&shareUid=1312668&shareFrom=com.coolapk.market_10.0.3">酷安<i class="fa fa-external-link"></i></span>也发布了</p>
-<p align="right"><span class="exturl" data-url="aHR0cHM6Ly93d3cuY29vbGFway5jb20vZmVlZC85NTc3Nzc0P3NoYXJlS2V5PU16UTJaamRpWVRZMlpXTTROV1UzTURneFl6VX4mc2hhcmVVaWQ9MTMxMjY2OCZzaGFyZUZyb209Y29tLmNvb2xhcGsubWFya2V0XzEwLjAuMw==" title="https://www.coolapk.com/feed/9577774?shareKey=MzQ2ZjdiYTY2ZWM4NWU3MDgxYzU~&shareUid=1312668&shareFrom=com.coolapk.market_10.0.3">部分参考<i class="fa fa-external-link"></i></span></p>]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
 </search>
