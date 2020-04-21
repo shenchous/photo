@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>复活PanDownload</title>
+    <url>/kongwu/2/</url>
+    <content><![CDATA[<script src="https://kongwu233.gitee.io/kongwu/live2d-widget/autoload.js"></script>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于<del>屑百度</del>搞事，把<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFpZHUuY29tL3M/aWU9dXRmLTgmZj04JnJzdl9icD0xJnJzdl9pZHg9MSZ0bj1iYWlkdSZ3ZD1QYW5Eb3dubG9hZA==" title="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=PanDownload">PanDownload的作者给抓了<i class="fa fa-external-link"></i></span>，导致现在的PanDownload基本上是残废的，但最近看到GitHub上面有人发布了本地虚拟服务器<br>现在的PanDownload速度也不能起飞了，该慢的还是慢，而且还容易黑号<br>作者被抓了，之后百度如果更新了获取方法，那PanDownload就真的作废了<br><strong><em>网上的那些其他服务器最好别用，鬼知道是不是<del>屑百度在钓鱼</del>，而且用了其他的服务器也不知道有没有安全问题，能不用最好还是别用</em></strong><a id="more"></a></p>
+<hr>
+<h1 id="开搞"><a href="#开搞" class="headerlink" title="开搞"></a>开搞</h1><h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h2><p>去<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0VYQUNHL3BhbmRvd25sb2FkLWZha2UtbG9jYWxzZXJ2ZXI=" title="https://github.com/EXACG/pandownload-fake-localserver">GitHub<i class="fa fa-external-link"></i></span>上下载<br>下载完解压之后运行<strong>Pandownload服务离线工具.exe</strong>，运行之后就可以挂在后台不管它了</p>
+<hr>
+<h3 id="2-修改文件"><a href="#2-修改文件" class="headerlink" title="2.修改文件"></a>2.修改文件</h3><p>因为这是本地本地虚拟服务器，所以需要修改<strong>C:\Windows\System32\drivers\etc</strong>里的<strong>hosts</strong><br>用记事本或者其他软件打开<strong>hosts</strong>（注意权限！可以用记事本修改，先复制到桌面修改完后再覆盖）<br>添加：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">127.0.0.1 pandownload.com</span><br></pre></td></tr></table></figure>
+<p>按下win+r，输入cmd，打开cmd之后输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ipconfig/flushdns</span><br></pre></td></tr></table></figure>
+<p>打开<strong>PanDownload.exe</strong>，登陆即可正常使用</p>
+<hr>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>如果不能登陆，使用<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFpZHUuY29tL3M/aWU9dXRmLTgmZj04JnJzdl9icD0xJnRuPWJhaWR1JndkPSVFOCU4RSVCNyVFNSU4RiU5NiVFNyU5OSVCRSVFNSVCQSVBNkNvb2tpZQ==" title="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=%E8%8E%B7%E5%8F%96%E7%99%BE%E5%BA%A6Cookie">Cookie<i class="fa fa-external-link"></i></span>登陆</p>
+<hr>
+<h1 id="吐槽"><a href="#吐槽" class="headerlink" title="吐槽"></a>吐槽</h1><p><del>屑百度网盘，不冲超级会员就8kb/s，冲了超级会员还限速，就很离谱了</del><br><del>现在直接抓人了还行，屑百度</del><br><del>今天上午在b站上看到的PanDownload教程视频，下午就没了？？？</del></p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>PanDownload</tag>
+        <tag>百度网盘</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>利用hexo和gitee快速搭建免费博客</title>
     <url>/kongwu/1/</url>
     <content><![CDATA[<h1 id="一、-创建账号和搭建环境"><a href="#一、-创建账号和搭建环境" class="headerlink" title="一、 创建账号和搭建环境"></a>一、 创建账号和搭建环境</h1><p>首先先去<span class="exturl" data-url="aHR0cHM6Ly9naXRlZS5jb20v" title="https://gitee.com/">gitee<i class="fa fa-external-link"></i></span>创建一个账号<br>下载安装<span class="exturl" data-url="aHR0cDovL25vZGVqcy5jbi9kb3dubG9hZC8=" title="http://nodejs.cn/download/">Node.js<i class="fa fa-external-link"></i></span><br>下载安装<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=" title="https://git-scm.com/">Git<i class="fa fa-external-link"></i></span>（国内下载比较慢）<a id="more"></a></p>
@@ -45,34 +73,6 @@
       <tags>
         <tag>博客</tag>
         <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>复活PanDownload</title>
-    <url>/kongwu/2/</url>
-    <content><![CDATA[<script src="https://kongwu233.gitee.io/kongwu/live2d-widget/autoload.js"></script>
-
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于<del>屑百度</del>搞事，把<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFpZHUuY29tL3M/aWU9dXRmLTgmZj04JnJzdl9icD0xJnJzdl9pZHg9MSZ0bj1iYWlkdSZ3ZD1QYW5Eb3dubG9hZA==" title="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=PanDownload">PanDownload的作者给抓了<i class="fa fa-external-link"></i></span>，导致现在的PanDownload基本上是残废的，但最近看到GitHub上面有人发布了本地虚拟服务器<br>现在的PanDownload速度也不能起飞了，该慢的还是慢，而且还容易黑号<br>作者被抓了，之后百度如果更新了获取方法，那PanDownload就真的作废了<br><strong><em>网上的那些其他服务器最好别用，鬼知道是不是<del>屑百度在钓鱼</del>，而且用了其他的服务器也不知道有没有安全问题，能不用最好还是别用</em></strong><a id="more"></a></p>
-<hr>
-<h1 id="开搞"><a href="#开搞" class="headerlink" title="开搞"></a>开搞</h1><h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h2><p>去<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0VYQUNHL3BhbmRvd25sb2FkLWZha2UtbG9jYWxzZXJ2ZXI=" title="https://github.com/EXACG/pandownload-fake-localserver">GitHub<i class="fa fa-external-link"></i></span>上下载<br>下载完解压之后运行<strong>Pandownload服务离线工具.exe</strong>，运行之后就可以挂在后台不管它了</p>
-<hr>
-<h3 id="2-修改文件"><a href="#2-修改文件" class="headerlink" title="2.修改文件"></a>2.修改文件</h3><p>因为这是本地本地虚拟服务器，所以需要修改<strong>C:\Windows\System32\drivers\etc</strong>里的<strong>hosts</strong><br>用记事本或者其他软件打开<strong>hosts</strong>（注意权限！可以用记事本修改，先复制到桌面修改完后再覆盖）<br>添加：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">127.0.0.1 pandownload.com</span><br></pre></td></tr></table></figure>
-<p>按下win+r，输入cmd，打开cmd之后输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ipconfig/flushdns</span><br></pre></td></tr></table></figure>
-<p>打开<strong>PanDownload.exe</strong>，登陆即可正常使用</p>
-<hr>
-<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>如果不能登陆，使用<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFpZHUuY29tL3M/aWU9dXRmLTgmZj04JnJzdl9icD0xJnRuPWJhaWR1JndkPSVFOCU4RSVCNyVFNSU4RiU5NiVFNyU5OSVCRSVFNSVCQSVBNkNvb2tpZQ==" title="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=%E8%8E%B7%E5%8F%96%E7%99%BE%E5%BA%A6Cookie">Cookie<i class="fa fa-external-link"></i></span>登陆</p>
-<hr>
-<h1 id="吐槽"><a href="#吐槽" class="headerlink" title="吐槽"></a>吐槽</h1><p><del>屑百度网盘，不冲超级会员就8kb/s，冲了超级会员还限速，就很离谱了</del><br><del>现在直接抓人了还行，f**k百度</del><br><del>今天上午在b站上看到的PanDownload教程视频，下午就没了？？？</del></p>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>PanDownload</tag>
-        <tag>百度网盘</tag>
       </tags>
   </entry>
 </search>
